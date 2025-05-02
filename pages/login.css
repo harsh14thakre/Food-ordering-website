@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.background {
+  background: url(./signup_background.jpg) no-repeat center center/cover;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+ 
+  justify-content: center;
+}
+.blur{
+  backdrop-filter: blur(50px);
+
+}
+
+.login-box {
+  border: 3px solid rgb(6, 143, 177);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* box-shadow: -6px -6px 15px 5px gray; */
+  /* background: rgb(231, 226, 226); */
+  border-radius: 15px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  border-radius: 30px;
+  border: none;
+  background: rgba(241, 235, 235, 0.979);
+  /* color: rgb(250, 242, 242); */
+}
+
+.input-group i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.options input[type=checkbox] {
+  margin-right: 0.25rem;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 30px;
+  border: none;
+  background: black;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-link {
+  text-align: center;
+  color: blue;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.register-link a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .login-box {
+    padding: 1.5rem;
+  }
+}
+#username {
+  background-color: white;
+}
+
+#password {
+  background-color: white;
+}
+
+.signup-box {
+  border: 3px solid rgb(6, 143, 177);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.signup-box button {
+  padding: 5px 10px 5px 10px;
+  background-color: rgb(100, 100, 219);
+  color: white;
+  margin-left: 139px;
+}
+
+.signup-box h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: rgba(247, 239, 239, 0.87);
+  font-size: 2rem;
+}/*# sourceMappingURL=login.css.map */

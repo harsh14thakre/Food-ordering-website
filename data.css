@@ -1,0 +1,365 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+#main {
+  background: url(/homeimg.jpg) no-repeat center center/cover;
+  height: 100vh;
+}
+
+#navbar {
+  background: linear-gradient(green blue );
+  height: 70px;
+  width: 100%;
+  /* background-color: grey; */
+  color: white;
+  position: absolute;
+}
+#navbar nav ul {
+  display: flex;
+  align-items: center;
+}
+#navbar nav ul #logo {
+  font-size: 30px;
+  font-family: Lobster;
+}
+#navbar nav ul li {
+  list-style: none;
+  margin-right: 123px;
+  margin-left: 58px;
+  margin-top: 30px;
+}
+#navbar nav ul li a {
+
+  text-decoration: none;
+  font-size: larger;
+  color: whitesmoke;
+}
+#navbar{
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  /* background-color: black; */
+}
+
+#navbar nav ul li a:hover{
+  transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+#head h1 {
+  color: whitesmoke;
+  text-align: center;
+  /* margin-top: 120px; */
+  font-size: 45px;
+}
+
+#box {
+  margin-left: 365px;
+  width: 635px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+#order_online {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 170px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+#order_online div {
+  width: 500px;
+  height: 270px;
+  background-color: white;
+  margin-right: 30px;
+  border-radius: 25px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#order_online div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+    /* Swiper is start from here  */
+    .swiper {
+      width: 100%;
+      height: 90vh;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Swiper section is send here  */
+
+
+#section2 {
+  /* margin-top: 100px; */
+  margin-left: 130px;
+  margin-right: 130px;
+  margin-bottom: 100px;
+}
+#section2 #circular_dishes {
+  display: grid;
+  grid-template-columns: repeat(10, 150px);
+  gap: 25px;
+  overflow-x: scroll;
+}
+#section2 #circular_dishes div img {
+  width: 170px;
+  height: 170px;
+}
+
+
+#restaurants {
+  width: 100%;
+  margin: auto;
+}
+#restaurants .restro_div {
+  display: grid;
+  grid-template-columns: repeat(20, 400px);
+  height: 300px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  gap: 20px;
+}
+#restaurants .restro_div div {
+  height: 300px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+/* -------------------------------------------------------footer------------------------------------------------ */
+.footer {
+  margin-top: 50px;
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer h2, .footer h3 {
+  color: #f8b400;
+  margin-bottom: 10px;
+}
+
+.footer-about p,
+.footer-contact p,
+.footer-links ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #f8b400;
+}
+
+.footer-newsletter input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 70%;
+}
+
+.footer-newsletter button {
+  padding: 10px 15px;
+  background-color: #f8b400;
+  border: none;
+  color: #1f1f1f;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.footer-newsletter button:hover {
+  background-color: #dba300;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f8b400;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+    /* 2nd section is start from here  */
+
+#section3 {
+  margin-left: 50px;
+}
+#section3 h1{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.slider-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-bottom: 10px;
+}
+
+.card {
+  display: inline-block;
+  background-color: white;
+  width: 350px;
+  margin-right: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  vertical-align: top;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.restaurant-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.info {
+  color: gray;
+  font-size: 0.9em;
+  margin-bottom: 8px;
+}
+
+.offers {
+  font-size: 0.85em;
+  background-color: #e6f4ea;
+  color: #1e8f4b;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+
+
+.all_type{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+}
+
+.all_type div{
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 350px;
+  /* box-shadow: -6px -6px 1px 5px gray; */
+  height: 250px;
+  margin-right: 15px;
+}
+.all_type div:hover{
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+.all_type div img{
+  width: 350px;
+  height: 250px;
+  border-radius: 20px;
+  /* box-shadow: -6px -6px 15px 5px gray; */
+  
+}
+
+#food_main h1{
+  margin-left: 125px;
+}
+
+
+
+
+
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 80%;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 90%;
+  }
+}

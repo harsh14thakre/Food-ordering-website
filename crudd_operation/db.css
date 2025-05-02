@@ -1,0 +1,37 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#booking{
+    background: url(/food_ordering.jpg)no-repeat center center/cover;
+    /* -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px); */
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+
+    /* margin: auto; */
+
+    form{
+        align-items: center;
+        margin: auto;
+        border: 1px solid rgb(14, 13, 13);
+        height: 300px;
+        width: 350px;
+        border-radius: 20px;
+        padding: 20px;
+
+        input{
+            padding: 2px 5px 2px 5px;
+        }
+        
+    }
+}
+
+#bt{            
+    margin-left: 120px
+}
